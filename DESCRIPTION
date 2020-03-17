@@ -1,0 +1,13 @@
+Package: SimBPDD
+Type: Package
+Title: Simulating differential distributions for Beta-Poisson models
+Version: 0.1
+Author: Roman Schefzik
+Maintainer: Roman Schefzik <roman.schefzik@medma.uni-heidelberg.de>
+Description: The package provides functions to generate differential distributions of different types and different degrees (from weak to strong) for Beta-Poisson models. A specific focus is given to the application in the context of single-cell RNA-sequencing data, but the procedures can in principle also be employed in other application areas.
+Depends: R (>= 3.6)
+Imports: BPSC, statmod, doParallel, foreach
+Remotes: github::nghiavtr/BPSC
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.1.0
