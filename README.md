@@ -6,7 +6,7 @@ Simulating differential distributions for Beta-Poisson models
 
 ### Prerequisites
 
-To use the SimBPDD package, it is required to install the following packages first:  
+Please make sure that you have the latest version of R installed. To use the SimBPDD package, it is required to install the following packages first:  
 `install.packages("statmod")`  
 `install.packages("doParallel")`  
 `install.packages("foreach")`  
