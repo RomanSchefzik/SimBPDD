@@ -1,6 +1,6 @@
 # SimBPDD
 
-Simulating differential distributions for Beta-Poisson models
+Simulating differential distributions for Beta-Poisson models, in particular for single-cell RNA-sequencing (scRNA-seq) data
 
 ## Installation
 
