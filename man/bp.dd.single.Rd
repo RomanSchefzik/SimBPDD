@@ -13,9 +13,9 @@ bp.dd.single(pars,N1,N2,case,degree,seedex)
 
 \item{N2}{size of the sample drawn from the manipulated BP model}
 
-\item{case}{case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2020)}
+\item{case}{case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2021)}
 
-\item{degree}{parameter to set the degree of the created difference (low to strong), see Schefzik (2020) for details and the choice of a range of possible values}
+\item{degree}{parameter to set the degree of the created difference (low to strong), see Schefzik (2021) for details and the choice of a range of possible values}
 
 \item{seedex}{seed used for sampling from the fitted BP model to ensure reproducibility}
 }
@@ -49,5 +49,5 @@ dd5<-bp.dd.single(pars,N1,N2,case="DPZ",degree,seedex)
 
 }
 \references{
-R. Schefzik (2020). Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA sequencing data.
+R. Schefzik (2021). SimBPDD: Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA-sequencing data. Annales Mathematicae et Informaticae, 53:283-298. Available at \url{https://ami.uni-eszterhazy.hu/uploads/papers/finalpdf/AMI_53_from283to298.pdf}
 }

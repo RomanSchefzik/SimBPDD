@@ -11,20 +11,20 @@ bp.sim.manipulated(Res.par,N2,case,degree,seedex)
 
 \item{N2}{size of the samples drawn from the manipulated BP models}
 
-\item{case}{case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2020)}
+\item{case}{case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2021)}
 
-\item{degree}{parameter to set the degree of the created difference (low to strong), see Schefzik (2020) for details and the choice of a range of possible values}
+\item{degree}{parameter to set the degree of the created difference (low to strong), see Schefzik (2021) for details and the choice of a range of possible values}
 
 \item{seedex}{seed used for sampling from the fitted BP models to ensure reproducibility}
 }
 \value{
-matrix with simulated manipulated single-cell RNA-sequencing expression data of dimension KxN2, where K is the number of well-fitted genes by the BP models for which the desired manipulation is feasible, see Schefzik (2020) for details
+matrix with simulated manipulated single-cell RNA-sequencing expression data of dimension KxN2, where K is the number of well-fitted genes by the BP models for which the desired manipulation is feasible, see Schefzik (2021) for details
 }
 \description{
 Creates manipulated samples based on the control samples for simulations involving Beta-Poisson (BP) models
 }
 \details{
-Creates manipulated samples based on the control samples for simulations involving BP models. Details regarding the design of the manipulations can be found in Schefzik (2020).
+Creates manipulated samples based on the control samples for simulations involving BP models. Details regarding the design of the manipulations can be found in Schefzik (2021).
 }
 \examples{
 N1<-500
@@ -41,5 +41,5 @@ man5<-bp.sim.manipulated(ctrl[[2]],N2,case="DPZ",degree,seedex)
 
 }
 \references{
-R. Schefzik (2020). Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA sequencing data.
+R. Schefzik (2021). SimBPDD: Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA-sequencing data. Annales Mathematicae et Informaticae, 53:283-298. Available at \url{https://ami.uni-eszterhazy.hu/uploads/papers/finalpdf/AMI_53_from283to298.pdf}
 }

@@ -17,14 +17,14 @@ bp.sim.control(DATA,N1,seedex)
 A list of two:
 \itemize{
 \item  samples.bp.wellfit:	matrix with simulated control single-cell RNA-sequencing expression data of dimension GxN1, where G is the number of well-fitted genes by the BP models
-\item parameters.bp.wellfit:	matrix with G rows containing the fitting results for the corresponding BP models in the columns, namely the parameters alpha, beta, lambda1, lambda2 and p0 as in Vu et al. (2016) or Schefzik (2020) and the Monte-Carlo-method-based p-value MCpval derived to check the validity of the BP fit (here, a fit is considered to be reasonably good if MCpval>0.05)
+\item parameters.bp.wellfit:	matrix with G rows containing the fitting results for the corresponding BP models in the columns, namely the parameters alpha, beta, lambda1, lambda2 and p0 as in Vu et al. (2016) or Schefzik (2021) and the Monte-Carlo-method-based p-value MCpval derived to check the validity of the BP fit (here, a fit is considered to be reasonably good if MCpval>0.05)
 }
 }
 \description{
 Creates control samples for simulations involving Beta-Poisson (BP) models
 }
 \details{
-Creates control samples for simulations involving BP models. For a given single-cell RNA-sequencing data set, a five-parameter BP model (Vu et al. 2016) is fitted to each gene. Then, it is checked whether the BP model is actually a good fit following the procedure in Vu et al. (2016), and instances with a good fit are kept. For each of those well-fitted genes, a sample of size N1 is drawn from the respective fitted BP model.
+Creates control samples for simulations involving BP models. For a given single-cell RNA-sequencing data set, a five-parameter BP model (Vu et al., 2016) is fitted to each gene. Then, it is checked whether the BP model is actually a good fit following the procedure in Vu et al. (2016), and instances with a good fit are kept. For each of those well-fitted genes, a sample of size N1 is drawn from the respective fitted BP model.
 }
 \examples{
 N1<-500
@@ -34,6 +34,6 @@ ctrl<-bp.sim.control(DATA.EX,N1,seedex)
 
 }
 \references{
-R. Schefzik (2020). Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA sequencing data. \cr
+R. Schefzik (2021). SimBPDD: Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA-sequencing data. Annales Mathematicae et Informaticae, 53:283-298. Available at \url{https://ami.uni-eszterhazy.hu/uploads/papers/finalpdf/AMI_53_from283to298.pdf}\cr
 T. N. Vu, Q. F. Wills, K. R. Kalari, N. Niu, L. Wang, M. Rantalainen, and Y. Pawitan (2016). Beta-Poisson model for single-cell RNA seq data analyses. Bioinformatics, 32:2128-2135.
 }
