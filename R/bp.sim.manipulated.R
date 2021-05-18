@@ -4,18 +4,18 @@
 #'
 #'@import BPSC
 #'@name bp.sim.manipulated
-#'@details Creates manipulated samples based on the control samples for simulations involving BP models. Details regarding the design of the manipulations can be found in Schefzik (2020).
+#'@details Creates manipulated samples based on the control samples for simulations involving BP models. Details regarding the design of the manipulations can be found in Schefzik (2021).
 #'@usage bp.sim.manipulated(Res.par,N2,case,degree,seedex)
 #'
 #'@param Res.par	matrix including the fitted parameters for the well-fitted control instances that are to be manipulated (e.g. the output matrix parameters.bp.wellfit from the \code{bp.sim.control} function)
 #'@param N2	size of the samples drawn from the manipulated BP models
-#'@param case	case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2020)
-#'@param degree	parameter to set the degree of the created difference (low to strong), see Schefzik (2020) for details and the choice of a range of possible values
+#'@param case	case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2021)
+#'@param degree	parameter to set the degree of the created difference (low to strong), see Schefzik (2021) for details and the choice of a range of possible values
 #'@param seedex	seed used for sampling from the fitted BP models to ensure reproducibility
 #'
-#'@return matrix with simulated manipulated single-cell RNA-sequencing expression data of dimension KxN2, where K is the number of well-fitted genes by the BP models for which the desired manipulation is feasible, see Schefzik (2020) for details
+#'@return matrix with simulated manipulated single-cell RNA-sequencing expression data of dimension KxN2, where K is the number of well-fitted genes by the BP models for which the desired manipulation is feasible, see Schefzik (2021) for details
 #'
-#'@references R. Schefzik (2020). Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA sequencing data.
+#'@references R. Schefzik (2021). SimBPDD: Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA-sequencing data. Annales Mathematicae et Informaticae, 53:283-298. Available at \url{https://ami.uni-eszterhazy.hu/uploads/papers/finalpdf/AMI_53_from283to298.pdf}
 #'
 #'@examples
 #'N1<-500

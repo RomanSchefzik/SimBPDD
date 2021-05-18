@@ -10,8 +10,8 @@
 #'@param pars	vector consisting of pre-specified values for the BP parameters alpha, beta, lambda1, lambda2 and p0 (in this order!)
 #'@param N1	size of the sample drawn from the control BP model
 #'@param N2	size of the sample drawn from the manipulated BP model
-#'@param case	case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2020)
-#'@param degree	parameter to set the degree of the created difference (low to strong), see Schefzik (2020) for details and the choice of a range of possible values
+#'@param case	case corresponding to a specific parameter manipulation in the BP model; specifically, case can be one of "DLambda", "DAlpha", "DBeta", "DAlphaBeta" or "DPZ" following the design and the respective descriptive table in Schefzik (2021)
+#'@param degree	parameter to set the degree of the created difference (low to strong), see Schefzik (2021) for details and the choice of a range of possible values
 #'@param seedex	seed used for sampling from the fitted BP model to ensure reproducibility
 #'
 #'@return A list of two:
@@ -20,7 +20,7 @@
 #'\item sim.bp.manip: vector of simulated manipulated BP sample
 #'}
 #'
-#'@references R. Schefzik (2020). Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA sequencing data.
+#'@references R. Schefzik (2021). SimBPDD: Simulating differential distributions in Beta-Poisson models, in particular for single-cell RNA-sequencing data. Annales Mathematicae et Informaticae, 53:283-298. Available at \url{https://ami.uni-eszterhazy.hu/uploads/papers/finalpdf/AMI_53_from283to298.pdf}
 #'
 #'@examples
 #'#create vector consisting of pre-specified values for the BP parameters alpha, beta, lambda1,
